@@ -1,0 +1,11 @@
+{
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"cd client && npm start\" \"cd server && npm run dev\"",
+    "postinstall": "cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "" 
+  }
+}

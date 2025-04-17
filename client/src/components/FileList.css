@@ -1,0 +1,125 @@
+/* Middle Section (File List) */
+.middle-section {
+    flex-grow: 1;
+    background-color: #A9B5DF4D;
+    padding: 20px;
+    overflow: auto; /* For scrollable content if needed */
+  }
+  
+  .file-list input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  
+  .file-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* border: 1px solid #e0e0e0; */
+    /* border-radius: 5px; */
+    overflow: hidden; /* To contain rounded borders of list items */
+  }
+  
+  .file-list li {
+    display: grid;
+    margin: 0.5rem;
+    grid-template-columns: 50px 2fr 3fr 1fr 1fr 40px; /* Adjust column widths as needed */
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+  }
+  
+  .file-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .file-list li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .file-list .header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .file-list .item-icon {
+    /* Style for folder/file icons */
+    margin-right: 10px;
+    color: #888;
+  }
+  
+  .file-list .actions-menu {
+    position: relative;
+  }
+  
+  .file-list .actions-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .file-list .actions-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 5px 0;
+    display: none; /* Initially hidden */
+  }
+  
+  .file-list .actions-dropdown.open {
+    display: block;
+  }
+  
+  .file-list .actions-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 8px 15px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .file-list .actions-dropdown button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .file-list .pagination {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .file-list .pagination button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .file-list .pagination button:hover {
+    background-color: #f0f0f0;
+  }
+  

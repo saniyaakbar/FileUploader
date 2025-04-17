@@ -1,0 +1,16 @@
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar .filler {
+    background-color: #5870e9;
+    height: 100%;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 0%; /* Will be updated dynamically */
+}

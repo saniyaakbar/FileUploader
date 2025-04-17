@@ -1,0 +1,26 @@
+#
+# omni.dat file as prototype for interfaces file
+#
+# Ident: $Id: omni.dat 1.5 1999/07/13 09:34:20 chris Development $
+#
+
+[AGG_P]
+{
+        Primary: myhost_name.ibm.com 4100
+}
+
+[AGG_B]
+{
+        Primary: myhost_name.ibm.com 4150
+}
+
+[AGG_V]
+{
+        Primary: myhost_name.ibm.com 4100
+        Backup: myhost_name.ibm.com 4150
+}
+
+[AGG_GATE]
+{
+        Primary: myhost_name.ibm.com 4105
+}

@@ -1,0 +1,24 @@
+.breadcrumb {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.breadcrumb-item {
+    margin-right: 5px;
+}
+
+.breadcrumb-separator {
+    margin-right: 5px;
+}
+
+/* Folder Tree Styles (FolderTree.css) - Minimal for now */
+.folder-tree ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.folder-tree li {
+    /* Styles already in App.css for basic appearance */
+}

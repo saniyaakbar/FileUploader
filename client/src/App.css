@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f6f8; /* Light grey background */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Top Section */
+.top-section {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.add-btn {
+  background-color: #5870e9; /* Purple-blue add button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.filter-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 200px;
+}
+
+/* Content Area */
+.content {
+  display: flex;
+  flex-grow: 1;
+  
+  .item-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+  
+  .icon {
+    width: 30px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .label {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  h3{
+    line-height: 0;
+  }
+  
+  /* Vertical line */
+  .separator {
+    width: 1px;
+    height: 40px;
+    background-color: #ccc;
+    margin-right: 1.5rem;
+  }
+  
+}
+
+/* Left Section (Folder Tree) */
+.left-section {
+  background-color: #f9f9f9;
+  border-right: 1px solid #e0e0e0;
+  width: 250px; /* Adjust width as needed */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.folder-tree h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.folder-tree ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.folder-tree li {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  border-radius: 5px;
+}
+
+.folder-tree li:hover {
+  background-color: #e0e0e0;
+}
+
+.upload-progress {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.upload-progress h4 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+
+/* Right Section (Document Viewer) */
+.right-section {
+  background-color: #f9f9f9;
+  border-left: 1px solid #e0e0e0;
+  width: 400px; /* Adjust width as needed */
+  padding: 20px;
+}
+
+.document-viewer {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.document-viewer iframe {
+  border: none;
+}
+
+.add-container {
+  position: relative; /* To position the dropdown */
+}
+
+.add-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.add-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 8px 15px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-dropdown button:hover {
+  background-color: #f0f0f0;
+}

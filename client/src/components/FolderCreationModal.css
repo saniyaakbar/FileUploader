@@ -1,0 +1,110 @@
+/* Base modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* Modal container */
+.modal {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 400px; /* Adjust width as needed */
+    position: relative; /* For close button positioning */
+}
+
+/* Modal Header */
+.modal h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Close Button */
+.modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #555;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.modal .close-button:hover {
+    color: #000;
+}
+
+/* Form Group (for labels and inputs) */
+.modal-group {
+    margin-bottom: 15px;
+}
+
+.modal-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.modal input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal input[type="text"]:focus {
+    outline: none;
+    border-color: #5870e9; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(88, 112, 233, 0.3);
+}
+
+/* Modal Actions (Buttons) */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-actions button:first-child { /* Cancel button */
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modal-actions button:first-child:hover {
+    background-color: #e0e0e0;
+}
+
+.modal-actions button:last-child { /* Create button */
+    background-color: #5870e9;
+    color: white;
+}
+
+.modal-actions button:last-child:hover {
+    background-color: #465bc0;
+}
